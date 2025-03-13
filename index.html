@@ -1,203 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Junior Diego - Transformando Ideias em Soluções</title>
-  <style>
-    /* Global Styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      background: #f0f0f0;
-      color: #333;
-    }
-    a {
-      text-decoration: none;
-      color: #2980b9;
-      transition: color 0.3s;
-    }
-    a:hover {
-      color: #1c5980;
-    }
-    header {
-      background: #2980b9;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    header h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
-      color: #ffeb3b;
-      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-    }
-    header p {
-      font-size: 1.2em;
-    }
-    nav {
-      background: #fff;
-      padding: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    nav li {
-      margin: 0 15px;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    section {
-      margin-bottom: 40px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #ddd;
-    }
-    section:last-child {
-      border-bottom: none;
-    }
-    h2 {
-      font-size: 2em;
-      margin-bottom: 15px;
-      color: #2980b9;
-      border-left: 4px solid #2980b9;
-      padding-left: 10px;
-    }
-    p {
-      margin-bottom: 15px;
-      font-size: 1.1em;
-    }
-    ul {
-      list-style: none;
-      margin-bottom: 15px;
-    }
-    li {
-      margin-bottom: 10px;
-      padding-left: 15px;
-      position: relative;
-    }
-    li:before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #2980b9;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #2980b9;
-      color: #fff;
-      border-radius: 5px;
-      font-size: 1em;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background: #1c5980;
-    }
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 20px;
-    }
-    @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-        align-items: center;
-      }
-      nav li {
-        margin: 10px 0;
-      }
-    }
-  </style>
+    <title>Calculadora de Estatísticas</title>
 </head>
 <body>
-  <!-- Cabeçalho -->
-  <header>
-    <h1>Junior Diego - Transformando Ideias em Soluções</h1>
-    <p>Desenvolvedor, Gestor e Inovador</p>
-  </header>
-  
-  <!-- Navegação -->
-  <nav>
-    <ul>
-      <li><a href="#sobre">Sobre Mim</a></li>
-      <li><a href="#tecnologias">Tecnologias</a></li>
-      <li><a href="#repositorios">Repositórios</a></li>
-      <li><a href="#curriculo">Currículo</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-  
-  <!-- Conteúdo Principal -->
-  <div class="container">
-    <!-- Seção Sobre Mim -->
-    <section id="sobre">
-      <h2>Sobre Mim</h2>
-      <p>Olá! Eu sou o <strong>Junior Diego Silva dos Santos</strong>, formado em Gestão da Tecnologia da Informação pela Fatec Jundiaí - Centro Paula Souza (Nota: 9.0). Atualmente, sou pós-graduando em Matemática Financeira e Estatística e Segurança da Informação. Possuo experiência com notas fiscais, conferência de materiais e sistema TOTVS, e tenho um forte interesse em gestão de projetos, auditorias, desenvolvimento de sistemas e educação.</p>
-    </section>
-    
-    <!-- Seção Tecnologias -->
-    <section id="tecnologias">
-      <h2>Tecnologias e Ferramentas</h2>
-      <p>Utilizo diversas ferramentas para desenvolvimento e análise, tais como:</p>
-      <ul>
-        <li>💻 Desenvolvimento: Python (Tkinter, Pygame), Kotlin (Android Studio)</li>
-        <li>📊 Análises e Dados: Power BI, Excel Avançado</li>
-        <li>🔒 Segurança da Informação: Conceitos e práticas em auditoria e proteção de dados</li>
-        <li>🎲 Game Dev: Projetos de jogos online e offline</li>
-      </ul>
-    </section>
-    
-    <!-- Seção Repositórios -->
-    <section id="repositorios">
-      <h2>Repositórios no GitHub</h2>
-      <p>Confira meus projetos desenvolvidos através da plataforma <a href="https://dio.me" target="_blank">DIO.me</a>:</p>
-      <ul>
-        <li><a href="https://github.com/junior670/Suzano---Python-Developer" target="_blank">Suzano - Python Developer</a></li>
-        <li><a href="https://github.com/junior670/Desafios-de-C-digo-SQUADIO---Iniciante" target="_blank">Desafios de Código SQUADIO - Iniciante</a></li>
-      </ul>
-    </section>
-    
-    <!-- Seção Currículo -->
-    <section id="curriculo">
-      <h2>Currículo Vitae</h2>
-      <p>Faça o download do meu currículo para conhecer mais sobre minha trajetória profissional:</p>
-      <!-- Certifique-se de que o arquivo "Curriculo_JuniorDiego.pdf" esteja disponível na mesma pasta do HTML -->
-      <a href="https://github.com/junior670/Portf-lio/blob/main/Curriculo_JuniorDiego.pdf.pdf" class="btn" target="_blank">Baixar Currículo</a>
-    </section>
-    
-    <!-- Seção Contato -->
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>Conecte-se comigo através das redes sociais ou envie um e-mail:</p>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/junior-santos-9b930b211" target="_blank">LinkedIn</a></li>
-        <li>E-mail: <a href="mailto:diegojr09@hotmail.com">diegojr09@hotmail.com</a></li>
-      </ul>
-    </section>
-  </div>
-  
-  <!-- Rodapé -->
-  <footer>
-    <p>&copy; 2025 Junior Diego. Todos os direitos reservados.</p>
-    <p>"Tecnologia e gestão transformando ideias em soluções!"</p>
-  </footer>
+    <div>
+        <label for="xi1">xi1:</label>
+        <input type="text" id="xi1" />
+        
+        <label for="xi2">xi2:</label>
+        <input type="text" id="xi2" />
+        
+        <label for="xi3">xi3:</label>
+        <input type="text" id="xi3" />
+        
+        <label for="xi4">xi4:</label>
+        <input type="text" id="xi4" />
+        
+        <label for="xi5">xi5:</label>
+        <input type="text" id="xi5" />
+        
+        <label for="fi1">fi1:</label>
+        <input type="text" id="fi1" />
+        
+        <label for="fi2">fi2:</label>
+        <input type="text" id="fi2" />
+        
+        <label for="fi3">fi3:</label>
+        <input type="text" id="fi3" />
+        
+        <label for="fi4">fi4:</label>
+        <input type="text" id="fi4" />
+        
+        <label for="fi5">fi5:</label>
+        <input type="text" id="fi5" />
+        
+        <button onclick="calcular()">Calcular</button>
+        
+        <p id="result"></p>
+        
+        <p id="contato">CONTATOS:</p>
+        <p id="contato-details">diego.santos230@fatec.sp.gov.br<br>Fatec de Jundiaí<br>WhatsApp (019)9 8704-2551<br>carlos.schuster@fatec.sp.gov.br<br>joao.santos@fatec.sp.gov.br<br>galileo.schioser@fatec.sp.gov.br</p>
+    </div>
+
+    <script>
+        function calcular() {
+            var xi1 = parseFloat(document.getElementById("xi1").value);
+            var xi2 = parseFloat(document.getElementById("xi2").value);
+            var xi3 = parseFloat(document.getElementById("xi3").value);
+            var xi4 = parseFloat(document.getElementById("xi4").value);
+            var xi5 = parseFloat(document.getElementById("xi5").value);
+
+            var fi1 = parseFloat(document.getElementById("fi1").value);
+            var fi2 = parseFloat(document.getElementById("fi2").value);
+            var fi3 = parseFloat(document.getElementById("fi3").value);
+            var fi4 = parseFloat(document.getElementById("fi4").value);
+            var fi5 = parseFloat(document.getElementById("fi5").value);
+
+            var N = fi1 + fi2 + fi3 + fi4 + fi5;
+
+            var xifi = (xi1 * fi1) + (xi2 * fi2) + (xi3 * fi3) + (xi4 * fi4) + (xi5 * fi5);
+            var X = xifi / N;
+
+            var a1 = Math.pow((xi1 - X), 2) * fi1;
+            var a2 = Math.pow((xi2 - X), 2) * fi2;
+            var a3 = Math.pow((xi3 - X), 2) * fi3;
+            var a4 = Math.pow((xi4 - X), 2) * fi4;
+            var a5 = Math.pow((xi5 - X), 2) * fi5;
+            var xifi1 = a1 + a2 + a3 + a4 + a5;
+            var s2 = xifi1 / (N - 1);
+
+            var ss = Math.sqrt(s2);
+
+            var cv = (ss / X) * 100;
+
+            document.getElementById("result").innerHTML = "Total de Elementos do conjunto: " + N.toFixed(2) +
+                "<br>Média: " + X.toFixed(2) +
+                "<br>Variância: " + s2.toFixed(2) +
+                "<br>Desvio Padrão: " + ss.toFixed(2) +
+                "<br>Coeficiente de Variação %: " + cv.toFixed(2);
+        }
+    </script>
 </body>
 </html>
