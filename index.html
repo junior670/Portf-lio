@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Junior Diego - Transformando Ideias em Soluções</title>
   <style>
-    /* Global Styles */
+    /* Reset e estilos básicos */
     * {
       margin: 0;
       padding: 0;
@@ -13,53 +13,35 @@
     }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
       background: #f0f0f0;
       color: #333;
-    }
-    a {
-      text-decoration: none;
-      color: #2980b9;
-      transition: color 0.3s;
-    }
-    a:hover {
-      color: #1c5980;
+      line-height: 1.6;
+      padding: 20px;
     }
     header {
+      text-align: center;
+      padding: 40px 20px;
       background: #2980b9;
       color: #fff;
-      padding: 20px 0;
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      margin-bottom: 20px;
     }
     header h1 {
-      font-size: 2.8em;
+      font-size: 3em;
       margin-bottom: 10px;
+      /* Sombra e cor no título */
       color: #ffeb3b;
       text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
     }
     header p {
       font-size: 1.2em;
-    }
-    nav {
-      background: #fff;
-      padding: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    nav li {
-      margin: 0 15px;
+      opacity: 0.9;
     }
     .container {
-      max-width: 1200px;
+      max-width: 900px;
       margin: 20px auto;
-      padding: 20px;
       background: #fff;
+      padding: 40px;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
@@ -68,13 +50,12 @@
       padding-bottom: 20px;
       border-bottom: 1px solid #ddd;
     }
-    section:last-child {
+    section:last-of-type {
       border-bottom: none;
     }
-    h2 {
-      font-size: 2em;
-      margin-bottom: 15px;
+    h2, h3 {
       color: #2980b9;
+      margin-bottom: 15px;
       border-left: 4px solid #2980b9;
       padding-left: 10px;
     }
@@ -97,107 +78,78 @@
       left: 0;
       color: #2980b9;
     }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #2980b9;
-      color: #fff;
-      border-radius: 5px;
-      font-size: 1em;
-      transition: background 0.3s;
+    a {
+      color: #2980b9;
+      text-decoration: none;
+      transition: color 0.3s;
     }
-    .btn:hover {
-      background: #1c5980;
+    a:hover {
+      text-decoration: underline;
+      color: #1c5980;
     }
     footer {
-      background: #333;
-      color: #fff;
       text-align: center;
-      padding: 20px;
+      font-size: 0.9em;
+      color: #95a5a6;
       margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
     }
-    @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-        align-items: center;
+    /* Responsividade */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5em;
       }
-      nav li {
-        margin: 10px 0;
+      .container {
+        padding: 20px;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Cabeçalho -->
   <header>
     <h1>Junior Diego - Transformando Ideias em Soluções</h1>
     <p>Desenvolvedor, Gestor e Inovador</p>
   </header>
-  
-  <!-- Navegação -->
-  <nav>
-    <ul>
-      <li><a href="#sobre">Sobre Mim</a></li>
-      <li><a href="#tecnologias">Tecnologias</a></li>
-      <li><a href="#repositorios">Repositórios</a></li>
-      <li><a href="#curriculo">Currículo</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-  
-  <!-- Conteúdo Principal -->
   <div class="container">
-    <!-- Seção Sobre Mim -->
-    <section id="sobre">
-      <h2>Sobre Mim</h2>
-      <p>Olá! Eu sou o <strong>Junior Diego Silva dos Santos</strong>, formado em Gestão da Tecnologia da Informação pela Fatec Jundiaí - Centro Paula Souza (Nota: 9.0). Atualmente, sou pós-graduando em Matemática Financeira e Estatística e Segurança da Informação. Possuo experiência com notas fiscais, conferência de materiais e sistema TOTVS, e tenho um forte interesse em gestão de projetos, auditorias, desenvolvimento de sistemas e educação.</p>
+    <section id="sobre-mim">
+      <h2>👋 Olá! Eu sou o Junior Diego Silva dos Santos</h2>
+      <h3>🚀 Sobre mim</h3>
+      <p>🎓 Formado em <strong>Gestão da Tecnologia da Informação</strong> pela Fatec Jundiaí - Centro Paula Souza (Nota: 9.0)</p>
+      <p>📚 Pós-graduando em <strong>Matemática Financeira e Estatística</strong> e <strong>Segurança da Informação</strong></p>
+      <p>💼 Experiência com <strong>notas fiscais, conferência de materiais e sistema TOTVS</strong></p>
+      <p>🔍 Interesse em <strong>gestão de projetos, auditorias, desenvolvimento de sistemas e educação</strong></p>
     </section>
     
-    <!-- Seção Tecnologias -->
     <section id="tecnologias">
-      <h2>Tecnologias e Ferramentas</h2>
-      <p>Utilizo diversas ferramentas para desenvolvimento e análise, tais como:</p>
+      <h2>🛠️ Tecnologias e Ferramentas</h2>
       <ul>
-        <li>💻 Desenvolvimento: Python (Tkinter, Pygame), Kotlin (Android Studio)</li>
-        <li>📊 Análises e Dados: Power BI, Excel Avançado</li>
-        <li>🔒 Segurança da Informação: Conceitos e práticas em auditoria e proteção de dados</li>
-        <li>🎲 Game Dev: Projetos de jogos online e offline</li>
+        <li>💻 <strong>Desenvolvimento:</strong> Python (Tkinter, Pygame), Kotlin (Android Studio)</li>
+        <li>📊 <strong>Análises e Dados:</strong> Power BI, Excel Avançado</li>
+        <li>🔒 <strong>Segurança da Informação:</strong> Conceitos e práticas em auditoria e proteção de dados</li>
+        <li>🎲 <strong>Game Dev:</strong> Projetos de jogos online e offline</li>
       </ul>
     </section>
     
-    <!-- Seção Repositórios -->
     <section id="repositorios">
-      <h2>Repositórios no GitHub</h2>
-      <p>Confira meus projetos desenvolvidos através da plataforma <a href="https://dio.me" target="_blank">DIO.me</a>:</p>
+      <h2>💻 Repositórios no GitHub</h2>
       <ul>
-        <li><a href="https://github.com/junior670/Suzano---Python-Developer" target="_blank">Suzano - Python Developer</a></li>
-        <li><a href="https://github.com/junior670/Desafios-de-C-digo-SQUADIO---Iniciante" target="_blank">Desafios de Código SQUADIO - Iniciante</a></li>
+        <li>🔗 <a href="https://github.com/junior670/Suzano---Python-Developer" target="_blank">Suzano - Python Developer</a></li>
+        <li>🔗 <a href="https://github.com/junior670/Desafios-de-C-digo-SQUADIO---Iniciante" target="_blank">Desafios de Código SQUADIO - Iniciante</a></li>
       </ul>
+      <p><em>Observação: Estes repositórios foram desenvolvidos através da plataforma <a href="https://dio.me" target="_blank">DIO.me</a>.</em></p>
     </section>
     
-    <!-- Seção Currículo -->
-    <section id="curriculo">
-      <h2>Currículo Vitae</h2>
-      <p>Faça o download do meu currículo para conhecer mais sobre minha trajetória profissional:</p>
-      <!-- Certifique-se de que o arquivo "Curriculo_JuniorDiego.pdf" esteja disponível na mesma pasta do HTML -->
-      <a href="Curriculo_JuniorDiego.pdf" class="btn" download>Baixar Currículo</a>
-    </section>
-    
-    <!-- Seção Contato -->
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>Conecte-se comigo através das redes sociais ou envie um e-mail:</p>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/junior-santos-9b930b211" target="_blank">LinkedIn</a></li>
-        <li>E-mail: <a href="mailto:diegojr09@hotmail.com">diegojr09@hotmail.com</a></li>
-      </ul>
+    <section id="conectar">
+      <h2>📫 Vamos Conectar?</h2>
+      <p>🔗 <a href="https://www.linkedin.com/in/junior-santos-9b930b211" target="_blank">LinkedIn</a></p>
+      <p>📩 E-mail: <a href="mailto:diegojr09@hotmail.com">diegojr09@hotmail.com</a></p>
+      <p>🚀 Sempre aberto a novas oportunidades e colaborações!</p>
     </section>
   </div>
-  
-  <!-- Rodapé -->
   <footer>
     <p>&copy; 2025 Junior Diego. Todos os direitos reservados.</p>
-    <p>"Tecnologia e gestão transformando ideias em soluções!"</p>
+    <p><em>"Tecnologia e gestão transformando ideias em soluções!"</em></p>
   </footer>
 </body>
 </html>
