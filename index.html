@@ -1,155 +1,205 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Junior Diego - Transformando Ideias em Soluções</title>
-  <style>
-    /* Reset e estilos básicos */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f0f0;
-      color: #333;
-      line-height: 1.6;
-      padding: 20px;
-    }
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      background: #2980b9;
-      color: #fff;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-      /* Sombra e cor no título */
-      color: #ffeb3b;
-      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-    }
-    header p {
-      font-size: 1.2em;
-      opacity: 0.9;
-    }
-    .container {
-      max-width: 900px;
-      margin: 20px auto;
-      background: #fff;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    section {
-      margin-bottom: 40px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #ddd;
-    }
-    section:last-of-type {
-      border-bottom: none;
-    }
-    h2, h3 {
-      color: #2980b9;
-      margin-bottom: 15px;
-      border-left: 4px solid #2980b9;
-      padding-left: 10px;
-    }
-    p {
-      margin-bottom: 15px;
-      font-size: 1.1em;
-    }
-    ul {
-      list-style: none;
-      margin-bottom: 15px;
-    }
-    li {
-      margin-bottom: 10px;
-      padding-left: 15px;
-      position: relative;
-    }
-    li:before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #2980b9;
-    }
-    a {
-      color: #2980b9;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    a:hover {
-      text-decoration: underline;
-      color: #1c5980;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #95a5a6;
-      margin-top: 20px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
-    }
-    /* Responsividade */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.5em;
-      }
-      .container {
-        padding: 20px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Medidas de Posição Central e Dispersão</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        section {
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-row {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            font-size: 1rem;
+            color: #333;
+        }
+        input {
+            width: 150px;
+            padding: 8px;
+            font-size: 1rem;
+            margin: 5px 0;
+        }
+        button {
+            background-color: #4c7faf;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #4c7faf;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .header {
+            background-color: #4c7faf;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .header p {
+            font-size: 1rem;
+        }
+        .header .intro, .header .formacao, .header .projetos {
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Junior Diego - Transformando Ideias em Soluções</h1>
-    <p>Desenvolvedor, Gestor e Inovador</p>
-  </header>
-  <div class="container">
-    <section id="sobre-mim">
-      <h2>👋 Olá! Eu sou o Junior Diego Silva dos Santos</h2>
-      <h3>🚀 Sobre mim</h3>
-      <p>🎓 Formado em <strong>Gestão da Tecnologia da Informação</strong> pela Fatec Jundiaí - Centro Paula Souza (Nota: 9.0)</p>
-      <p>📚 Pós-graduando em <strong>Matemática Financeira e Estatística</strong> e <strong>Segurança da Informação</strong></p>
-      <p>💼 Experiência com <strong>notas fiscais, conferência de materiais e sistema TOTVS</strong></p>
-      <p>🔍 Interesse em <strong>gestão de projetos, auditorias, desenvolvimento de sistemas e educação</strong></p>
-    </section>
+
+<section>
+    <div class="header">
+        <h1>Bem-vindo ao meu Portfólio!</h1>
+        <p>Aqui estão alguns dos meus projetos e ferramentas desenvolvidas.</p>
+
+        <div class="intro">
+            <h3>Sobre Junior Diego Silva dos Santos</h3>
+            <p>Profissional formado em Gestão da Tecnologia da Informação pela Fatec de Jundiaí e atualmente cursando pós-graduação em Matemática Financeira e Estatística e Segurança da Informação. Tenho interesse em áreas como gestão de projetos, sistemas e auditorias. Acredito no poder da transformação por meio da tecnologia e sou um líder voltado para inovação e soluções criativas.</p>
+        </div>
+
+        <div class="formacao">
+            <h3>Formação Acadêmica</h3>
+            <ul>
+                <li><strong>Graduação:</strong> Gestão da Tecnologia da Informação - Fatec Jundiaí (2021 - 2023) - Nota 9.0</li>
+                <li><strong>Pós-Graduação:</strong> Matemática Financeira e Estatística - Faculdade Líbano (2024 - Atual)</li>
+                <li><strong>Pós-Graduação:</strong> Segurança da Informação - Faculdade Líbano (2024 - Atual)</li>
+                <li><strong>Certificados:</strong> Scrum Master Certification, Dio Campus Expert, diversos cursos pela Dio e Sebrae.</li>
+            </ul>
+        </div>
+
+        <div class="projetos">
+            <h3>Projetos Desenvolvidos</h3>
+            <p>Entre os projetos mais relevantes, destaco a criação de ferramentas de cálculos financeiros, como calculadoras de delta, juros compostos, valor presente e futuro, além de sistemas de medição e controle, sempre com foco em resultados precisos e soluções inovadoras.</p>
+        </div>
+    </div>
+
+    <p style="text-align:center; font-size: 1rem; color: #555;">Essa ferramenta permite calcular a média, variância, desvio padrão e coeficiente de variação de um conjunto de dados.</p>
     
-    <section id="tecnologias">
-      <h2>🛠️ Tecnologias e Ferramentas</h2>
-      <ul>
-        <li>💻 <strong>Desenvolvimento:</strong> Python (Tkinter, Pygame), Kotlin (Android Studio)</li>
-        <li>📊 <strong>Análises e Dados:</strong> Power BI, Excel Avançado</li>
-        <li>🔒 <strong>Segurança da Informação:</strong> Conceitos e práticas em auditoria e proteção de dados</li>
-        <li>🎲 <strong>Game Dev:</strong> Projetos de jogos online e offline</li>
-      </ul>
-    </section>
-    
-    <section id="repositorios">
-      <h2>💻 Repositórios no GitHub</h2>
-      <ul>
-        <li>🔗 <a href="https://github.com/junior670/Suzano---Python-Developer" target="_blank">Suzano - Python Developer</a></li>
-        <li>🔗 <a href="https://github.com/junior670/Desafios-de-C-digo-SQUADIO---Iniciante" target="_blank">Desafios de Código SQUADIO - Iniciante</a></li>
-      </ul>
-      <p><em>Observação: Estes repositórios foram desenvolvidos através da plataforma <a href="https://dio.me" target="_blank">DIO.me</a>.</em></p>
-    </section>
-    
-    <section id="conectar">
-      <h2>📫 Vamos Conectar?</h2>
-      <p>🔗 <a href="https://www.linkedin.com/in/junior-santos-9b930b211" target="_blank">LinkedIn</a></p>
-      <p>📩 E-mail: <a href="mailto:diegojr09@hotmail.com">diegojr09@hotmail.com</a></p>
-      <p>🚀 Sempre aberto a novas oportunidades e colaborações!</p>
-    </section>
-  </div>
-  <footer>
-    <p>&copy; 2025 Junior Diego. Todos os direitos reservados.</p>
-    <p><em>"Tecnologia e gestão transformando ideias em soluções!"</em></p>
-  </footer>
+    <div class="container">
+        <h1 style="font-size: 1.8rem; color: #333;">Medidas de Posição Central e Dispersão - FATEC-JUNDIAÍ 2023</h1>
+
+        <form id="form">
+            <div class="form-row">
+                <label for="xi1">xi1:</label>
+                <input type="number" id="xi1" name="xi1" required>
+                <label for="fi1">fi1:</label>
+                <input type="number" id="fi1" name="fi1" required>
+            </div>
+            <div class="form-row">
+                <label for="xi2">xi2:</label>
+                <input type="number" id="xi2" name="xi2" required>
+                <label for="fi2">fi2:</label>
+                <input type="number" id="fi2" name="fi2" required>
+            </div>
+            <div class="form-row">
+                <label for="xi3">xi3:</label>
+                <input type="number" id="xi3" name="xi3" required>
+                <label for="fi3">fi3:</label>
+                <input type="number" id="fi3" name="fi3" required>
+            </div>
+            <div class="form-row">
+                <label for="xi4">xi4:</label>
+                <input type="number" id="xi4" name="xi4" required>
+                <label for="fi4">fi4:</label>
+                <input type="number" id="fi4" name="fi4" required>
+            </div>
+            <div class="form-row">
+                <label for="xi5">xi5:</label>
+                <input type="number" id="xi5" name="xi5" required>
+                <label for="fi5">fi5:</label>
+                <input type="number" id="fi5" name="fi5" required>
+            </div>
+            <!-- Se você precisar de mais valores, basta adicionar mais blocos similares aos acima -->
+            <div class="button-container">
+                <button type="button" onclick="calcular()">Calcular</button>
+                <button type="button" onclick="limpar()">Limpar</button>
+            </div>
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+</section>
+
+<script>
+    function calcular() {
+        const xi1 = parseFloat(document.getElementById('xi1').value);
+        const xi2 = parseFloat(document.getElementById('xi2').value);
+        const xi3 = parseFloat(document.getElementById('xi3').value);
+        const xi4 = parseFloat(document.getElementById('xi4').value);
+        const xi5 = parseFloat(document.getElementById('xi5').value);
+
+        const fi1 = parseFloat(document.getElementById('fi1').value);
+        const fi2 = parseFloat(document.getElementById('fi2').value);
+        const fi3 = parseFloat(document.getElementById('fi3').value);
+        const fi4 = parseFloat(document.getElementById('fi4').value);
+        const fi5 = parseFloat(document.getElementById('fi5').value);
+
+        const N = fi1 + fi2 + fi3 + fi4 + fi5;
+
+        if (N === 0 || isNaN(N)) {
+            document.getElementById('result').innerHTML = "Erro: Insira valores válidos.";
+            return;
+        }
+
+        const xifi = (xi1 * fi1) + (xi2 * fi2) + (xi3 * fi3) + (xi4 * fi4) + (xi5 * fi5);
+        const X = xifi / N;
+
+        const a1 = ((xi1 - X) ** 2) * fi1;
+        const a2 = ((xi2 - X) ** 2) * fi2;
+        const a3 = ((xi3 - X) ** 2) * fi3;
+        const a4 = ((xi4 - X) ** 2) * fi4;
+        const a5 = ((xi5 - X) ** 2) * fi5;
+        const xifi1 = a1 + a2 + a3 + a4 + a5;
+        const s2 = xifi1 / (N - 1);
+
+        const ss = Math.sqrt(s2);
+        const cv = (ss / X) * 100;
+
+        document.getElementById('result').innerHTML = ` 
+            Total de Elementos do conjunto: ${N.toFixed(2)}<br>
+            Média: ${X.toFixed(2)}<br>
+            Variância: ${s2.toFixed(2)}<br>
+            Desvio Padrão: ${ss.toFixed(2)}<br>
+            Coeficiente de Variação (%): ${cv.toFixed(2)}
+        `;
+    }
+
+    function limpar() {
+        document.getElementById('form').reset();
+        document.getElementById('result').innerHTML = "";
+        
+    }
+</script>
+
 </body>
 </html>
