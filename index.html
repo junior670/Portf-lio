@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Medidas de Posição Central e Dispersão</title>
+    <title>Portfólio & Calculadora Estatística</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,16 +11,35 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-        section {
-            margin: 20px;
-        }
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #4c7faf;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .header h1 { margin: 0; font-size: 2rem; }
+        .header p { font-size: 1rem; }
+        .header .intro, .header .formacao, .header .projetos {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .redes-sociais {
+            margin-top: 15px;
+        }
+        .redes-sociais a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
         }
         .form-row {
             margin-bottom: 15px;
@@ -37,6 +56,10 @@
             font-size: 1rem;
             margin: 5px 0;
         }
+        .button-container {
+            text-align: center;
+            margin-top: 15px;
+        }
         button {
             background-color: #4c7faf;
             color: white;
@@ -45,33 +68,16 @@
             font-size: 1rem;
             cursor: pointer;
             border-radius: 5px;
-            margin-right: 10px;
+            margin: 5px;
         }
         button:hover {
-            background-color: #4c7faf;
+            background-color: #3b5c8f;
         }
         .result {
             margin-top: 20px;
             font-size: 1.2rem;
             color: #333;
-        }
-        .header {
-            background-color: #4c7faf;
-            color: white;
-            padding: 15px;
             text-align: center;
-            border-radius: 8px;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        .header p {
-            font-size: 1rem;
-        }
-        .header .intro, .header .formacao, .header .projetos {
-            margin-top: 20px;
-            text-align: left;
         }
     </style>
 </head>
@@ -80,66 +86,73 @@
 <section>
     <div class="header">
         <h1>Bem-vindo ao meu Portfólio!</h1>
-        <p>Aqui estão alguns dos meus projetos e ferramentas desenvolvidas.</p>
+        <p>Conheça meus projetos e ferramentas desenvolvidas.</p>
 
         <div class="intro">
             <h3>Sobre Junior Diego Silva dos Santos</h3>
-            <p>Profissional formado em Gestão da Tecnologia da Informação pela Fatec de Jundiaí e atualmente cursando pós-graduação em Matemática Financeira e Estatística e Segurança da Informação. Tenho interesse em áreas como gestão de projetos, sistemas e auditorias. Acredito no poder da transformação por meio da tecnologia e sou um líder voltado para inovação e soluções criativas.</p>
+            <p>Profissional formado em Gestão da Tecnologia da Informação pela Fatec Jundiaí, pós-graduando em Matemática Financeira, Estatística e Segurança da Informação. Apaixonado por tecnologia, gestão e inovação.</p>
         </div>
 
         <div class="formacao">
             <h3>Formação Acadêmica</h3>
             <ul>
-                <li><strong>Graduação:</strong> Gestão da Tecnologia da Informação - Fatec Jundiaí (2021 - 2023) - Nota 9.0</li>
-                <li><strong>Pós-Graduação:</strong> Matemática Financeira e Estatística - Faculdade Líbano (2024 - Atual)</li>
-                <li><strong>Pós-Graduação:</strong> Segurança da Informação - Faculdade Líbano (2024 - Atual)</li>
-                <li><strong>Certificados:</strong> Scrum Master Certification, Dio Campus Expert, diversos cursos pela Dio e Sebrae.</li>
+                <li><strong>Graduação:</strong> Gestão da Tecnologia da Informação - Fatec Jundiaí (Nota 9.0)</li>
+                <li><strong>Pós-Graduação:</strong> Matemática Financeira e Estatística - Faculdade Líbano (Em andamento)</li>
+                <li><strong>Pós-Graduação:</strong> Segurança da Informação - Faculdade Líbano (Em andamento)</li>
+                <li><strong>Certificações:</strong> Scrum Master Certification, Dio Campus Expert, cursos na DIO e Sebrae.</li>
             </ul>
         </div>
 
         <div class="projetos">
             <h3>Projetos Desenvolvidos</h3>
-            <p>Entre os projetos mais relevantes, destaco a criação de ferramentas de cálculos financeiros, como calculadoras de delta, juros compostos, valor presente e futuro, além de sistemas de medição e controle, sempre com foco em resultados precisos e soluções inovadoras.</p>
+            <p>Calculadoras financeiras, sistemas de medição e controle, análise estatística e desenvolvimento de jogos.</p>
+        </div>
+
+        <div class="redes-sociais">
+            <h3>Redes Sociais</h3>
+            <a href="https://www.linkedin.com/in/junior-santos-9b930b211" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/junior670" target="_blank">GitHub</a> |
+            <a href="https://www.instagram.com/SEU_INSTAGRAM" target="_blank">Instagram</a>
         </div>
     </div>
 
-    <p style="text-align:center; font-size: 1rem; color: #555;">Essa ferramenta permite calcular a média, variância, desvio padrão e coeficiente de variação de um conjunto de dados.</p>
-    
+    <p style="text-align:center; font-size: 1rem; color: #555;">Esta ferramenta calcula a média, variância, desvio padrão e coeficiente de variação de um conjunto de dados.</p>
+
     <div class="container">
         <h1 style="font-size: 1.8rem; color: #333;">Medidas de Posição Central e Dispersão - FATEC-JUNDIAÍ 2023</h1>
 
         <form id="form">
             <div class="form-row">
                 <label for="xi1">xi1:</label>
-                <input type="number" id="xi1" name="xi1" required>
+                <input type="number" id="xi1">
                 <label for="fi1">fi1:</label>
-                <input type="number" id="fi1" name="fi1" required>
+                <input type="number" id="fi1">
             </div>
             <div class="form-row">
                 <label for="xi2">xi2:</label>
-                <input type="number" id="xi2" name="xi2" required>
+                <input type="number" id="xi2">
                 <label for="fi2">fi2:</label>
-                <input type="number" id="fi2" name="fi2" required>
+                <input type="number" id="fi2">
             </div>
             <div class="form-row">
                 <label for="xi3">xi3:</label>
-                <input type="number" id="xi3" name="xi3" required>
+                <input type="number" id="xi3">
                 <label for="fi3">fi3:</label>
-                <input type="number" id="fi3" name="fi3" required>
+                <input type="number" id="fi3">
             </div>
             <div class="form-row">
                 <label for="xi4">xi4:</label>
-                <input type="number" id="xi4" name="xi4" required>
+                <input type="number" id="xi4">
                 <label for="fi4">fi4:</label>
-                <input type="number" id="fi4" name="fi4" required>
+                <input type="number" id="fi4">
             </div>
             <div class="form-row">
                 <label for="xi5">xi5:</label>
-                <input type="number" id="xi5" name="xi5" required>
+                <input type="number" id="xi5">
                 <label for="fi5">fi5:</label>
-                <input type="number" id="fi5" name="fi5" required>
+                <input type="number" id="fi5">
             </div>
-            <!-- Se você precisar de mais valores, basta adicionar mais blocos similares aos acima -->
+
             <div class="button-container">
                 <button type="button" onclick="calcular()">Calcular</button>
                 <button type="button" onclick="limpar()">Limpar</button>
@@ -152,52 +165,43 @@
 
 <script>
     function calcular() {
-        const xi1 = parseFloat(document.getElementById('xi1').value);
-        const xi2 = parseFloat(document.getElementById('xi2').value);
-        const xi3 = parseFloat(document.getElementById('xi3').value);
-        const xi4 = parseFloat(document.getElementById('xi4').value);
-        const xi5 = parseFloat(document.getElementById('xi5').value);
+        let valores = [], frequencias = [], somaFiXi = 0, somaFi = 0;
+        let somaFrequencias = 0; // Variável para somar os elementos fi
 
-        const fi1 = parseFloat(document.getElementById('fi1').value);
-        const fi2 = parseFloat(document.getElementById('fi2').value);
-        const fi3 = parseFloat(document.getElementById('fi3').value);
-        const fi4 = parseFloat(document.getElementById('fi4').value);
-        const fi5 = parseFloat(document.getElementById('fi5').value);
+        for (let i = 1; i <= 5; i++) {
+            let xi = parseFloat(document.getElementById(`xi${i}`).value);
+            let fi = parseFloat(document.getElementById(`fi${i}`).value);
+            if (!isNaN(xi) && !isNaN(fi)) {
+                valores.push(xi);
+                frequencias.push(fi);
+                somaFiXi += xi * fi;
+                somaFi += fi;
+                somaFrequencias += fi; // Soma as frequências fi
+            }
+        }
 
-        const N = fi1 + fi2 + fi3 + fi4 + fi5;
-
-        if (N === 0 || isNaN(N)) {
+        if (somaFi === 0) {
             document.getElementById('result').innerHTML = "Erro: Insira valores válidos.";
             return;
         }
 
-        const xifi = (xi1 * fi1) + (xi2 * fi2) + (xi3 * fi3) + (xi4 * fi4) + (xi5 * fi5);
-        const X = xifi / N;
+        let media = somaFiXi / somaFi;
+        let variancia = valores.reduce((sum, xi, i) => sum + frequencias[i] * Math.pow(xi - media, 2), 0) / (somaFi - 1);
+        let desvioPadrao = Math.sqrt(variancia);
+        let coefVar = (desvioPadrao / media) * 100;
 
-        const a1 = ((xi1 - X) ** 2) * fi1;
-        const a2 = ((xi2 - X) ** 2) * fi2;
-        const a3 = ((xi3 - X) ** 2) * fi3;
-        const a4 = ((xi4 - X) ** 2) * fi4;
-        const a5 = ((xi5 - X) ** 2) * fi5;
-        const xifi1 = a1 + a2 + a3 + a4 + a5;
-        const s2 = xifi1 / (N - 1);
-
-        const ss = Math.sqrt(s2);
-        const cv = (ss / X) * 100;
-
-        document.getElementById('result').innerHTML = ` 
-            Total de Elementos do conjunto: ${N.toFixed(2)}<br>
-            Média: ${X.toFixed(2)}<br>
-            Variância: ${s2.toFixed(2)}<br>
-            Desvio Padrão: ${ss.toFixed(2)}<br>
-            Coeficiente de Variação (%): ${cv.toFixed(2)}
+        document.getElementById('result').innerHTML = `
+            Total de Elementos do conjunto (Σ fi): ${somaFrequencias.toFixed(2)}<br>
+            Média: ${media.toFixed(2)}<br>
+            Variância: ${variancia.toFixed(2)}<br>
+            Desvio Padrão: ${desvioPadrao.toFixed(2)}<br>
+            Coeficiente de Variação: ${coefVar.toFixed(2)}%
         `;
     }
 
     function limpar() {
         document.getElementById('form').reset();
         document.getElementById('result').innerHTML = "";
-        
     }
 </script>
 
