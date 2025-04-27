@@ -1,125 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio & Calculadora Estatística</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .header {
-            background-color: #4c7faf;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px;
-        }
-        .header h1 { margin: 0; font-size: 2rem; }
-        .header p { font-size: 1rem; }
-        .header .intro, .header .formacao, .header .projetos {
-            margin-top: 20px;
-            text-align: left;
-        }
-        .redes-sociais {
-            margin-top: 15px;
-        }
-        .redes-sociais a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-        .form-row {
-            margin-bottom: 15px;
-        }
-        label {
-            display: inline-block;
-            width: 100px;
-            font-size: 1rem;
-            color: #333;
-        }
-        input {
-            width: 150px;
-            padding: 8px;
-            font-size: 1rem;
-            margin: 5px 0;
-        }
-        .button-container {
-            text-align: center;
-            margin-top: 15px;
-        }
-        button {
-            background-color: #4c7faf;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1rem;
-            cursor: pointer;
-            border-radius: 5px;
-            margin: 5px;
-        }
-        button:hover {
-            background-color: #3b5c8f;
-        }
-        .result {
-            margin-top: 20px;
-            font-size: 1.2rem;
-            color: #333;
-            text-align: center;
-        }
-        footer {
-            background-color: #4c7faf;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            font-size: 0.9rem;
-            margin-top: 30px;
-            border-top: 1px solid #ccc;
-        }
-        footer a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio & Calculadora Estatística - Neon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0f0f0f;
+      color: #eee;
+    }
+    .container, .header, footer {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 30px;
+      border-radius: 15px;
+      background: #1a1a1a;
+      box-shadow: 0 0 20px #00f0ff;
+    }
+    .header {
+      text-align: center;
+      background: linear-gradient(135deg, #00ffd5, #5244d3);
+      color: black;
+      box-shadow: 0 0 20px #ff00b3;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-weight: 700;
+      text-shadow: 0 0 10px #fff;
+    }
+    .header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+    h3 {
+      margin-top: 30px;
+      color: #00f0ff;
+      text-shadow: 0 0 8px #ae00ff;
+      font-size: 1.8rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+    a {
+      color: #00f0ff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    a:hover {
+      color: #9f44d3;
+      text-shadow: 0 0 8px #d344bb;
+    }
+    .redes-sociais {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .redes-sociais a {
+      margin: 0 8px;
+      font-size: 1.1rem;
+    }
+    .form-row {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    label {
+      width: 80px;
+      text-align: right;
+      font-weight: 600;
+    }
+    input {
+      background: #111;
+      color: #0ff;
+      border: 1px solid #00f0ff;
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 1rem;
+      width: 120px;
+      transition: 0.3s;
+    }
+    input:focus {
+      border-color: #9f44d3;
+      outline: none;
+      box-shadow: 0 0 8px #9f44d3;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 25px;
+    }
+    button {
+      background: #00f0ff;
+      color: #0f0f0f;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px;
+      transition: 0.3s;
+      box-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+    }
+    button:hover {
+      background: #9f44d3;
+      color: white;
+      box-shadow: 0 0 20px #9f44d3, 0 0 30px #9f44d3;
+    }
+    .result {
+      margin-top: 30px;
+      font-size: 1.4rem;
+      color: #00f0ff;
+      text-align: center;
+    }
+    footer {
+      margin-top: 50px;
+      background: linear-gradient(135deg, #9f44d3, #00f0ff);
+      color: black;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      border-radius: 10px;
+    }
+    footer a {
+      color: #000;
+      font-weight: bold;
+    }
+    footer a:hover {
+      color: white;
+      text-shadow: 0 0 8px white;
+    }
+    p {
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
 
 <section>
-    <div class="header">
-        <h1>Bem-vindo ao meu Portfólio!</h1>
-        <p>Conheça meus projetos e ferramentas desenvolvidas.</p>
+  <div class="header">
+    <h1>Bem-vindo ao meu Portfólio!</h1>
+    <p>Conheça meus projetos e ferramentas desenvolvidas.</p>
 
-        <div class="intro">
-            <h3>Sobre Junior Diego Silva dos Santos</h3>
-            <p>Profissional formado em Gestão da Tecnologia da Informação pela Fatec Jundiaí, pós-graduando em Matemática Financeira, Estatística e Segurança da Informação. Apaixonado por tecnologia, gestão e inovação.</p>
-        </div>
+    <div class="intro">
+      <h3>Sobre Junior Diego Silva dos Santos</h3>
+      <p>Profissional formado em Gestão da Tecnologia da Informação pela Fatec Jundiaí, pós-graduado em Matemática Financeira, Estatística e Segurança da Informação. Apaixonado por tecnologia, gestão e inovação.</p>
+    </div>
 
-        <div class="formacao">
-            <h3>Formação Acadêmica</h3>
-            <ul>
-                <li><strong>Graduação:</strong> Gestão da Tecnologia da Informação - Fatec Jundiaí (Nota 9.0)</li>
-                <li><strong>Pós-Graduação:</strong> Matemática Financeira e Estatística - Faculdade Líbano (Nota: 9.0)</li>
-                <li><strong>Pós-Graduação:</strong> Segurança da Informação - Faculdade Líbano (Nota: 9.0)</li>
-                <li><strong>Certificações:</strong> Scrum Master Certification, Dio Campus Expert, cursos na DIO e Sebrae.</li>
-            </ul>
-        </div>
+    <div class="formacao">
+      <h3>Formação Acadêmica</h3>
+      <ul>
+        <li><strong>Graduação:</strong> Gestão da Tecnologia da Informação - Fatec Jundiaí (Nota 9.0)</li>
+        <li><strong>Pós-Graduação Lato Sensu-Especialização:</strong> Matemática Financeira e Estatística - Faculdade Líbano (Nota 9.0)</li>
+        <li><strong>Pós-Graduação Lato Sensu-Especialização:</strong> Segurança da Informação - Faculdade Líbano (Nota 9.0)</li>
+        <li><strong>Certificações:</strong> Scrum Master Certification, Dio Campus Expert, cursos na DIO e Sebrae.</li>
+      </ul>
+    </div>
 
-        <div class="projetos">
-            <h3>Projetos Desenvolvidos --- Simplifica - Power BI --- Certifique-se de ter o Power BI instalado no seu celular ou PC para acessar o link.</h3>
-            <ul>
+    <div class="projetos">
+      <h3>Projetos Desenvolvidos --- Simplifica - Power BI --- Certifique-se de ter o Power BI instalado no seu celular ou PC para acessar o link.</h3>
+      <ul>
                 <li>
                     <strong>Análises de Vendas</strong>: Relatórios e gráficos para apoiar decisões estratégicas.
                     <a href="https://app.powerbi.com/Redirect?action=openreport&context=Annotate&ctid=659ce2b8-0714-4198-8c38-dc9b60aabb57&pbi_source=mobile_android&groupObjectId=2b5cce53-14a3-484f-b0b0-6fd7b9a540f0&reportObjectId=df7f8062-956d-4280-ae75-7292aa28f9d1&reportPage=533fdd78a2b3f4394f00&bookmarkGuid=796e8d1a-3289-44db-a505-61229c770608&fullScreen=0" target="_blank">Ver Projeto</a>
@@ -132,112 +183,132 @@
                     <strong>Análise de Produtos</strong>:  Identificação de tendências e performance dos produtos.
                     <a href="https://app.powerbi.com/Redirect?action=openreport&context=Annotate&ctid=659ce2b8-0714-4198-8c38-dc9b60aabb57&pbi_source=mobile_android&groupObjectId=2b5cce53-14a3-484f-b0b0-6fd7b9a540f0&reportObjectId=93b32bcb-5477-4ca2-856e-bc3fbaabf27f&reportPage=0b9b030f368e72950ed6&bookmarkGuid=180cbc65-fadc-419a-8bcf-a8a40439aa4f&fullScreen=0" target="_blank">Ver Projeto</a>
                 </li>
-            </ul>
-        </div>
 
-        <div class="redes-sociais">
-            <h3>Redes Sociais</h3>
+            </ul>
+    </div>
+
+    <div class="projetos">
+      <h3>Hub de Portfólios Profissionais</h3>
+      <ul>
+        <li><strong>Portfólios:</strong> <a href="https://junior670.github.io/Hub-de-Portf-lios-Profissionais/"target="_blank">Ver Projeto</a></li>
+       
+        <!-- Repita se quiser  -->
+      </ul>
+    </div>
+
+    <div class="projetos">
+      <h3>Projetos de Matemática</h3>
+      <ul>
+        <li><strong>Matematica-Financeira :</strong> <a href="https://junior670.github.io/Matematica-Financeira/" target="_blank">Ver Projeto</a></li>
+        <li><strong>Calculadora de Horas Extras :</strong> <a href="https://junior670.github.io/Calculadora-de-Horas-Extras/" target="_blank">Ver Projeto</a></li>
+        <li><strong>Jogo da Memória:</strong> <a href="https://junior670.github.io/Jogo-da-mem-ria---Animais/" target="_blank">Jogar!</a></li>
+        <li><strong>Jogo da Velha:</strong> <a href="https://junior670.github.io/Jogo-da-velha/" target="_blank">Jogar!</a></li>
+        <!-- Repita se quiser mais jogos -->
+      </ul>
+    </div>
+
+    <div class="redes-sociais">
+      
+      <h3>Redes Sociais</h3>
             <a href="https://www.linkedin.com/in/junior-santos-9b930b211" target="_blank">LinkedIn</a> |
             <a href="https://github.com/junior670" target="_blank">GitHub</a> |
             <a href="https://www.instagram.com/SEU_INSTAGRAM" target="_blank">Instagram</a> |
             <a href="https://www.dio.me/sign-up?ref=AFTGYXYD2CLZ" target="_blank">DIO.me</a> |
             <a href="https://www.youtube.com/@joaocsantos6964" target="_blank">Professor Mestre João Santos</a>
-        </div>
     </div>
+  </div>
 
-    <p style="text-align:center; font-size: 1rem; color: #555;">Esta ferramenta calcula o total de elementos do conjunto, a média, a variância, o desvio padrão e o coeficiente de variação de um conjunto de dados, com base nas aulas do Professor João Santos.</p>
+  <p style="color: #aaaaaaea;">Esta ferramenta calcula o total de elementos do conjunto, a média, a variância, o desvio padrão e o coeficiente de variação de um conjunto de dados, com base nas aulas do Professor João Santos.</p>
 
-    <div class="container">
-        <h1 style="font-size: 1.8rem; color: #333;">Medidas de Posição Central e Dispersão - FATEC-JUNDIAÍ 2023</h1>
+  <div class="container">
+    <h1 style="text-align:center;">Medidas de Posição Central e Dispersão - FATEC-JUNDIAÍ 2023</h1>
 
-        <form id="form">
-            <div class="form-row">
-                <label for="xi1">xi1:</label>
-                <input type="number" id="xi1">
-                <label for="fi1">fi1:</label>
-                <input type="number" id="fi1">
-            </div>
-            <div class="form-row">
-                <label for="xi2">xi2:</label>
-                <input type="number" id="xi2">
-                <label for="fi2">fi2:</label>
-                <input type="number" id="fi2">
-            </div>
-            <div class="form-row">
-                <label for="xi3">xi3:</label>
-                <input type="number" id="xi3">
-                <label for="fi3">fi3:</label>
-                <input type="number" id="fi3">
-            </div>
-            <div class="form-row">
-                <label for="xi4">xi4:</label>
-                <input type="number" id="xi4">
-                <label for="fi4">fi4:</label>
-                <input type="number" id="fi4">
-            </div>
-            <div class="form-row">
-                <label for="xi5">xi5:</label>
-                <input type="number" id="xi5">
-                <label for="fi5">fi5:</label>
-                <input type="number" id="fi5">
-            </div>
+    <form id="form">
+      <div class="form-row">
+        <label for="xi1">xi1:</label>
+        <input type="number" id="xi1">
+        <label for="fi1">fi1:</label>
+        <input type="number" id="fi1">
+      </div>
+      <div class="form-row">
+        <label for="xi2">xi2:</label>
+        <input type="number" id="xi2">
+        <label for="fi2">fi2:</label>
+        <input type="number" id="fi2">
+      </div>
+      <div class="form-row">
+        <label for="xi3">xi3:</label>
+        <input type="number" id="xi3">
+        <label for="fi3">fi3:</label>
+        <input type="number" id="fi3">
+      </div>
+      <div class="form-row">
+        <label for="xi4">xi4:</label>
+        <input type="number" id="xi4">
+        <label for="fi4">fi4:</label>
+        <input type="number" id="fi4">
+      </div>
+      <div class="form-row">
+        <label for="xi5">xi5:</label>
+        <input type="number" id="xi5">
+        <label for="fi5">fi5:</label>
+        <input type="number" id="fi5">
+      </div>
 
-            <div class="button-container">
-                <button type="button" onclick="calcular()">Calcular</button>
-                <button type="button" onclick="limpar()">Limpar</button>
-            </div>
-        </form>
+      <div class="button-container">
+        <button type="button" onclick="calcular()">Calcular</button>
+        <button type="button" onclick="limpar()">Limpar</button>
+      </div>
+    </form>
 
-        <div class="result" id="result"></div>
-    </div>
+    <div class="result" id="result"></div>
+  </div>
 </section>
 
-<!-- Rodapé -->
 <footer>
-    <p>&copy; 2025 Junior Diego Silva dos Santos. Todos os direitos reservados.</p>
-    <p>Desenvolvido por <a href="https://www.linkedin.com/in/junior-santos-9b930b211" target="_blank">Junior Santos</a></p>
+  <p>&copy; 2025 Junior Diego Silva dos Santos. Todos os direitos reservados.</p>
+  <p>Desenvolvido por <a href="https://www.linkedin.com/in/junior-santos-9b930b211" target="_blank">Junior Santos</a></p>
 </footer>
 
 <script>
-    function calcular() {
-        let valores = [], frequencias = [], somaFiXi = 0, somaFi = 0;
-        let somaFrequencias = 0; // Variável para somar os elementos fi
+function calcular() {
+  let valores = [], frequencias = [], somaFiXi = 0, somaFi = 0, somaFrequencias = 0;
 
-        for (let i = 1; i <= 5; i++) {
-            let xi = parseFloat(document.getElementById(`xi${i}`).value);
-            let fi = parseFloat(document.getElementById(`fi${i}`).value);
-            if (!isNaN(xi) && !isNaN(fi)) {
-                valores.push(xi);
-                frequencias.push(fi);
-                somaFiXi += xi * fi;
-                somaFi += fi;
-                somaFrequencias += fi; // Soma as frequências fi
-            }
-        }
-
-        if (somaFi === 0) {
-            document.getElementById('result').innerHTML = "Erro: Insira valores válidos.";
-            return;
-        }
-
-        let media = somaFiXi / somaFi;
-        let variancia = valores.reduce((sum, xi, i) => sum + frequencias[i] * Math.pow(xi - media, 2), 0) / (somaFi - 1);
-        let desvioPadrao = Math.sqrt(variancia);
-        let coefVar = (desvioPadrao / media) * 100;
-
-        document.getElementById('result').innerHTML = `
-            Total de Elementos do conjunto (Σ fi): ${somaFrequencias.toFixed(2)}<br>
-            Média: ${media.toFixed(2)}<br>
-            Variância: ${variancia.toFixed(2)}<br>
-            Desvio Padrão: ${desvioPadrao.toFixed(2)}<br>
-            Coeficiente de Variação: ${coefVar.toFixed(2)}%
-        `;
+  for (let i = 1; i <= 5; i++) {
+    let xi = parseFloat(document.getElementById(`xi${i}`).value);
+    let fi = parseFloat(document.getElementById(`fi${i}`).value);
+    if (!isNaN(xi) && !isNaN(fi)) {
+      valores.push(xi);
+      frequencias.push(fi);
+      somaFiXi += xi * fi;
+      somaFi += fi;
+      somaFrequencias += fi;
     }
+  }
 
-    function limpar() {
-        document.getElementById('form').reset();
-        document.getElementById('result').innerHTML = "";
-    }
+  if (somaFi === 0) {
+    document.getElementById('result').innerHTML = "Erro: Insira valores válidos.";
+    return;
+  }
+
+  let media = somaFiXi / somaFi;
+  let variancia = valores.reduce((sum, xi, i) => sum + frequencias[i] * Math.pow(xi - media, 2), 0) / (somaFi - 1);
+  let desvioPadrao = Math.sqrt(variancia);
+  let coefVar = (desvioPadrao / media) * 100;
+
+  document.getElementById('result').innerHTML = `
+    Total de Elementos (Σ fi): ${somaFrequencias.toFixed(2)}<br>
+    Média: ${media.toFixed(2)}<br>
+    Variância: ${variancia.toFixed(2)}<br>
+    Desvio Padrão: ${desvioPadrao.toFixed(2)}<br>
+    Coeficiente de Variação: ${coefVar.toFixed(2)}%
+  `;
+}
+
+function limpar() {
+  document.getElementById('form').reset();
+  document.getElementById('result').innerHTML = "";
+}
 </script>
 
 </body>
